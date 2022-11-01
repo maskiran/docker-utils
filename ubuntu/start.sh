@@ -12,4 +12,5 @@ if [[ $(docker inspect $NAME -f '{{.State.Status}}' 2> /dev/null) != "running" ]
     docker run -d -t $DOCKER_ARGS u
 fi
 
+echo "Exec zsh on the container"
 docker exec -it $NAME zsh
