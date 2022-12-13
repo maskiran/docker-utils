@@ -1,1 +1,1 @@
-docker build -t u .
+docker build -t u --no-cache .
